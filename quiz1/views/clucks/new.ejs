@@ -1,0 +1,23 @@
+<%- include("../partials/header") %>
+ 
+<h1>New Clucks!</h1>
+
+<form action="/clucks" method="POST">
+    <label for="content">Content</label>  
+    <input type="text" placeholder="whatchoo cluckin' bout?" name="username">
+    <input type="submit" value="Cluck!">
+</form>
+<div class="form-group">
+<input 
+    type="url" 
+    name="imageUrl" 
+    class="form-control" 
+    placeholder="e.g. http://imgur.com/myPic.jpg"
+>
+</div>
+
+
+<%- include("../partials/footer") %>
+
+
+
