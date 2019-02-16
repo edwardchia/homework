@@ -1,0 +1,14 @@
+<%- include("../partials/header") %>
+<h1>I'm the index of all the cohorts in the db</h1>
+
+
+
+<% for (let cohort of cohorts) {%>
+<h2> <%= cohort.name %> </h2> <br>
+<p> <%= cohort.members%> </p>
+<a href="/cohorts/<%= cohort.id %>"> <button type="submit"> Show Cohort</button> </a>
+<% } %>
+
+
+
+<%- include("../partials/footer") %>
